@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         for (i in 0 until 19) {
             if (omokpan[x][i] == currentPlayer) {
                 count++
-                if (count == 5) return true
+                if (count >= 5) return true
             } else {
                 count = 0
             }
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         for (i in 0 until 19) {
             if (omokpan[i][y] == currentPlayer) {
                 count++
-                if (count == 5) return true
+                if (count >= 5) return true
             } else {
                 count = 0
             }
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         while (i >= 0 && i < 19 && j >= 0 && j < 19) {
             if (omokpan[i][j] == currentPlayer) {
                 count++
-                if (count == 5) return true
+                if (count >= 5) return true
             } else {
                 count = 0
             }
