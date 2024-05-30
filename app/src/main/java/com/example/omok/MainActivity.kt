@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var startOmokText: TextView
     private lateinit var winnerText: TextView
     private lateinit var omokpan: Array<IntArray>
-    //돌을 고른다
+    //검은돌부터
     private var currentPlayer = 1 // 1: black, 2: white
     private val board = Array(19) { BooleanArray(19) { false } }
 
