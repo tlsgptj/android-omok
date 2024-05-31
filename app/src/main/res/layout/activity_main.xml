@@ -1,64 +1,1184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
+
+    <TableLayout
+        android:id="@+id/board"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Omok"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textColor="#FFFFFFFF"
-        android:textSize="40dp"
-        android:background="#642EFE"/>
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
 
+        <TableRow android:layout_weight="1">
 
-    <TextView
-        android:layout_width="410dp"
-        android:layout_height="410dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/omokpan" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top_left" />
 
-    <TextView
-        android:id="@+id/black"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/blackdol"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
-    <TextView
-        android:id="@+id/white"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/whitedol"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
-    <TextView
-        android:id="@+id/StartOmok"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:layout_marginTop="480dp"
-        android:background="#F5DA81"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
-    <TextView
-        android:id="@+id/winnerText"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:text="@string/winner_text"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="550dp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
 
-</FrameLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_top_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_left" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokcenter" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omok_right" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottomleft" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottom" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/omokbottomright" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
