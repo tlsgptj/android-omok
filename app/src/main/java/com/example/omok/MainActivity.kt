@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.children
 
 class MainActivity : AppCompatActivity() {
-    private val board = Array(8) { IntArray(8) { 0 } } // 0: 빈 셀, 1: 검은 돌, 2: 흰 돌
+    private val board = Array(15) { IntArray(15) { 0 } } // 0: 빈 셀, 1: 검은 돌, 2: 흰 돌
     private var currentPlayer = 1 // 1: 검은 돌, 2: 흰 돌
     private var isGameStarted = false
 
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         // 세로 방향 검사
         count = 1
-        for (i in row + 1 until 8) {
+        for (i in row + 1 until 15) {
             if (board[i][col] == player) count++ else break
         }
         for (i in row - 1 downTo 0) {
@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         count = 1
         var i = row + 1
         var j = col + 1
-        while (i < 8 && j < 8) {
+        while (i < 15 && j < 15) {
             if (board[i][j] == player) count++ else break
             i++
             j++
@@ -118,14 +118,14 @@ class MainActivity : AppCompatActivity() {
         count = 1
         i = row + 1
         j = col - 1
-        while (i < 8 && j >= 0) {
+        while (i < 15 && j >= 0) {
             if (board[i][j] == player) count++ else break
             i++
             j--
         }
         i = row - 1
         j = col + 1
-        while (i >= 0 && j < 8) {
+        while (i >= 0 && j < 15) {
             if (board[i][j] == player) count++ else break
             i--
             j++
