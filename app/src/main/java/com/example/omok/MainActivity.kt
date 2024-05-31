@@ -1,4 +1,5 @@
 package com.example.omok
+
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -16,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         val boardLayout = findViewById<TableLayout>(R.id.board)
         val startGameText = findViewById<TextView>(R.id.start_game_text)
@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
         imageView?.setImageResource(if (currentPlayer == 1) R.drawable.blackdol else R.drawable.whitedol)
     }
 
-
     private fun switchPlayer() {
         currentPlayer = if (currentPlayer == 1) 2 else 1
     }
@@ -69,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
         // 가로 방향 검사
         var count = 1
-        for (i in col + 1 until 8) {
+        for (i in col + 1 until 15) {
             if (board[row][i] == player) count++ else break
         }
         for (i in col - 1 downTo 0) {
@@ -143,8 +142,6 @@ class MainActivity : AppCompatActivity() {
         isGameStarted = false
     }
 }
-
-
 
 
 
