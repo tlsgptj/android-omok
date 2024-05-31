@@ -138,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         val winnerText = if (player == 1) "검은 돌" else "흰 돌"
         val winnerTextView = findViewById<TextView>(R.id.winnerText)
         winnerTextView?.visibility = View.VISIBLE
-        winnerTextView?.text = "$winnerText 플레이어가 승리했습니다!"
+        winnerTextView?.text = getString(R.string.winner_text, winnerText)
         isGameStarted = false
     }
 }
