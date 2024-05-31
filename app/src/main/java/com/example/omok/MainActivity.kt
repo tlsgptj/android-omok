@@ -1,5 +1,4 @@
-package nextstep.omok
-
+package com.example.omok
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -8,7 +7,6 @@ import android.widget.TableRow
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.children
-import com.example.omok.R
 
 class MainActivity : AppCompatActivity() {
     private val board = Array(8) { IntArray(8) { 0 } } // 0: 빈 셀, 1: 검은 돌, 2: 흰 돌
@@ -19,25 +17,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val boardLayout = findViewById<TableLayout>(R.id.board)
         val startGameText = findViewById<TextView>(R.id.start_game_text)
 
-        boardLayout
-            .children
-            .filterIsInstance<TableRow>()
-            .forEachIndexed { rowIndex, tableRow ->
-                tableRow.children
-                    .filterIsInstance<ImageView>()
-                    .forEachIndexed { colIndex, imageView ->
-                        imageView.setOnClickListener {
-                            if (!isGameStarted) {
-                                startGameText.visibility = View.GONE
-                                isGameStarted = true
-                            }
-                            placePiece(rowIndex, colIndex)
+        boardLayout?.children?.filterIsInstance<TableRow>()?.forEachIndexed { rowIndex, tableRow ->
+            tableRow.children
+                .filterIsInstance<ImageView>()
+                .forEachIndexed { colIndex, imageView ->
+                    imageView.setOnClickListener {
+                        if (!isGameStarted) {
+                            startGameText?.visibility = View.GONE
+                            isGameStarted = true
                         }
+                        placePiece(rowIndex, colIndex)
                     }
-            }
+                }
+        }
+    }
+
+    override fun <T : View> findViewById(id: Int): T? {
+        return super.findViewById(id)
     }
 
     private fun placePiece(row: Int, col: Int) {
@@ -48,23 +48,16 @@ class MainActivity : AppCompatActivity() {
             switchPlayer()
         } else {
             val alreadyPlacedTextView = findViewById<TextView>(R.id.intheDol)
-            alreadyPlacedTextView.visibility = View.VISIBLE
+            alreadyPlacedTextView?.visibility = View.VISIBLE
         }
     }
 
     private fun updateBoard(row: Int, col: Int) {
         val boardLayout = findViewById<TableLayout>(R.id.board)
-        val imageView = (boardLayout.getChildAt(row) as TableRow).getChildAt(col) as ImageView
-        imageView.setImageResource(if (currentPlayer == 1) R.drawable.blackdol else R.drawable.whitedol)
+        val imageView = (boardLayout?.getChildAt(row) as? TableRow)?.getChildAt(col) as? ImageView
+        imageView?.setImageResource(if (currentPlayer == 1) R.drawable.blackdol else R.drawable.whitedol)
     }
 
-    public inline fun <reified T : View> findViewById(id: Int): T? {
-        return super.findViewById(id)
-    }
-
-    override fun <T : View> findViewById(id: Int): T? {
-        return super.findViewById(id)
-    }
 
     private fun switchPlayer() {
         currentPlayer = if (currentPlayer == 1) 2 else 1
@@ -145,8 +138,8 @@ class MainActivity : AppCompatActivity() {
     private fun showWinnerMessage(player: Int) {
         val winnerText = if (player == 1) "검은 돌" else "흰 돌"
         val winnerTextView = findViewById<TextView>(R.id.winnerText)
-        winnerTextView.visibility = View.VISIBLE
-        winnerTextView.text = "$winnerText 플레이어가 승리했습니다!"
+        winnerTextView?.visibility = View.VISIBLE
+        winnerTextView?.text = "$winnerText 플레이어가 승리했습니다!"
         isGameStarted = false
     }
 }
