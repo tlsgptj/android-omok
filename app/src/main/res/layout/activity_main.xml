@@ -1,13 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:id="@+id/start_game_text"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:text="게임을 시작해주세요."
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Omok"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:background="#9633FF"/>
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/winner_text"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:visibility="visible"
+        android:background="#F79D44"/>
+
+    <TextView
+        android:id="@+id/intheDol"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:text="돌이 있는 위치입니다!"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:visibility="visible"
+        android:background="#F79D44"/>
+
+
+    <ImageView
+        android:id="@+id/black_stone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/blackdol"/>
+
+    <ImageView
+        android:id="@+id/white_stone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/whitedol"/>
 
     <TableLayout
         android:id="@+id/board"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
         android:stretchColumns="*">
 
         <TableRow android:layout_weight="1">
@@ -1181,4 +1241,7 @@
         </TableRow>
 
     </TableLayout>
-</LinearLayout>
+
+
+
+</FrameLayout>
