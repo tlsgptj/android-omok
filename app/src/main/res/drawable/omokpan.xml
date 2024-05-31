@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="200dp"
+    android:width="360dp"
+    android:height="360dp"
     android:viewportWidth="360"
     android:viewportHeight="360">
 
@@ -17,13 +17,10 @@
     <path
         android:strokeColor="@color/black"
         android:strokeWidth="3"
-        android:pathData="M0,0 L0,360 M36,0 L36,360 M72,0 L72,360 M108,0 L108,360 M144,0 L144,360 M180,0 L180,360 M216,0 L216,360 M252,0 L252,360 M288,0 L288,360 M324,0 L324,360"/>
+        android:pathData="M0,0 L0,360 M19,0 L19,360 M38,0 L38,360 M57,0 L57,360 M76,0 L76,360 M95,0 L95,360 M114,0 L114,360 M133,0 L133,360 M152,0 L152,360 M171,0 L171,360 M190,0 L190,360 M209,0 L209,360 M228,0 L228,360 M247,0 L247,360 M266,0 L266,360 M285,0 L285,360 M304,0 L304,360 M323,0 L323,360 M342,0 L342,360"/>
 
     <path
         android:strokeColor="@color/black"
         android:strokeWidth="3"
-        android:pathData="M0,0 L360,0 M0,36 L360,36 M0,72 L360,72 M0,108 L360,108 M0,144 L360,144 M0,180 L360,180 M0,216 L360,216 M0,252 L360,252 M0,288 L360,288 M0,324 L360,324"/>
-
-
-
+        android:pathData="M0,0 L360,0 M0,19 L360,19 M0,38 L360,38 M0,57 L360,57 M0,76 L360,76 M0,95 L360,95 M0,114 L360,114 M0,133 L360,133 M0,152 L360,152 M0,171 L360,171 M0,190 L360,190 M0,209 L360,209 M0,228 L360,228 M0,247 L360,247 M0,266 L360,266 M0,285 L360,285 M0,304 L360,304 M0,323 L360,323 M0,342 L360,342"/>
 </vector>
