@@ -7,13 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     //변수정의
-    private lateinit var blackDol: TextView
-    private lateinit var whiteDol: TextView
-    private lateinit var startOmokText: TextView
+    lateinit var blackDol: TextView
+    lateinit var whiteDol: TextView
+    lateinit var startOmokText: TextView
     private lateinit var winnerText: TextView
-    private lateinit var omokpan: Array<IntArray>
+    lateinit var omokpan: Array<IntArray>
     //검은돌부터
-    private var currentPlayer = 1 // 1: black, 2: white
+    var currentPlayer = 1 // 1: black, 2: white
     private val board = Array(19) { BooleanArray(19) { false } }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,13 +30,13 @@ class MainActivity : AppCompatActivity() {
         startOmokText.text = "게임을 시작해주세요"
     }
 
-    private fun updateBoard() {
+    fun updateBoard() {
         blackDol.visibility = if (currentPlayer == 1) View.VISIBLE else View.INVISIBLE
         whiteDol.visibility = if (currentPlayer == 2) View.VISIBLE else View.INVISIBLE
     }
 
     //이겼는지 확인
-    private fun checkWin(x: Int, y: Int): Boolean {
+    fun checkWin(x: Int, y: Int): Boolean {
         var count = 0
 
         // 가로 검사
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         return false
     }
 
-    private fun placeDol(x: Int, y: Int) {
+    fun placeDol(x: Int, y: Int) {
         if (omokpan[x][y] == 0) {
             omokpan[x][y] = currentPlayer
             if (checkWin(x, y)) {
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun switchPlayer() {
+    fun switchPlayer() {
         currentPlayer = 3 - currentPlayer // 1 -> 2, 2 -> 1
         updateBoard()
     }
