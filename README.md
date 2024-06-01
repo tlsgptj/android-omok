@@ -11,3 +11,7 @@
 8. 검은돌/흰돌 이 승자입니다. 문구 뜨게 하기
 9. 게임 종료
 10. 6목 이상의 장목도 고려해야하므로 판정 할 때 count >= 5 로 표현
+<XML추가 내용> 
+    android:visibility="gone" -> gone의 경우 TextView 전체가 사라짐
+    android:visibility="invisible" -> 글자만 사라짐
+    android:visibility="visible" -> Textview 전체가 보임
