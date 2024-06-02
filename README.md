@@ -17,3 +17,8 @@
     android:visibility="gone" -> gone의 경우 TextView 전체가 사라짐
     android:visibility="invisible" -> 글자만 사라짐
     android:visibility="visible" -> Textview 전체가 보임
+12. 변수 표기 
+row: 현재 돌을 놓은 행 번호
+col: 현재 돌을 놓은 열 번호
+rowDelta: 검사 방향의 행 변화량 (-1, 0, 1)
+colDelta: 검사 방향의 열 변화량 (-1, 0, 1)
