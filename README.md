@@ -17,6 +17,7 @@
     android:visibility="gone" -> gone의 경우 TextView 전체가 사라짐
     android:visibility="invisible" -> 글자만 사라짐
     android:visibility="visible" -> Textview 전체가 보임
+
 12. 변수 표기 
 row: 현재 돌을 놓은 행 번호
 col: 현재 돌을 놓은 열 번호
