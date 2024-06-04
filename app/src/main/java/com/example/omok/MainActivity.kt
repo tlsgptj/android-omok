@@ -1,8 +1,6 @@
-package nextstep.omok
+package com.example.omok
 
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.View
 import android.widget.ImageView
 import android.widget.TableLayout
